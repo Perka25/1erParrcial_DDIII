@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e6e6e6;
+    line-height: 1.6;
+    background: radial-gradient(#534949, #5c5a5a, #0c0c0c)
+}
+
+.cont-elementos .item h2 {
+    text-align: center;
+}
+
+h2 {
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    color: #fe6767;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+#logo {
+    max-height: 100px;
+}
+
+.imgs-personajes {
+    max-height: 200px;
+}
+
+#img-contacto {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#img-menu,
+#img-caract {
+    max-width: 100%;
+
+}
+
+.conts-imgs-des {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.imgs-des {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 8px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+header.header,
+footer.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer {
+    height: 100px;
+}
+
+nav.nav {
+    margin-top: 10px;
+}
+
+nav.nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.nav a:hover {
+    color: #fe6767;
+}
+
+.psj {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Parallax con CSS */
+.parallax-css {
+    background: url('/Recursos/fondo-2.png') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* Parallax con JS */
+.parallax-js {
+    background: url('/Recursos/fondo-1.png') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenido */
+.content {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+
+    text-align: center;
+
+}
+
+.cont-elementos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+
+
+}
+
+.cont-elementos .item {
+    background: #222;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Formulario */
+.form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form button {
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #444;
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    .psj {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    nav.nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+
+    .cont-elementos .item {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    header.header {
+        padding: 10px;
+    }
+
+    header.header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav.nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    nav.nav a {
+        display: block;
+        background: #333;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .psj {
+        height: 50vh;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .cont-elementos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+        grid-gap: 10px;
+    }
+
+    .form label {
+        font-size: 0.9rem;
+    }
+
+    .form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
